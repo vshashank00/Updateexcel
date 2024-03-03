@@ -42,7 +42,7 @@ public class Update_excel {
         wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//div[contains(text(),\"Updated\")]")));
         String no=driver.findElement(By.xpath("//div[text()='Price']")).getAttribute("data-column-id");
         System.out.println(driver.findElement(By.xpath("//div[text()='Apple']/parent::div/following-sibling::div[@data-column-id="+no+"]/child::div")).getText());
-
+driver.quit();
 }
 void update( int row,int col,int value) throws IOException {
     FileInputStream fileInputStream=new FileInputStream(filename);
