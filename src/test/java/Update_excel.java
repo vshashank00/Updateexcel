@@ -22,7 +22,7 @@ import java.util.Iterator;
 public class Update_excel {
     String filename="C://Users//703337600//Downloads//download.xlsx";
     @Test
-    void dowload() throws InterruptedException, IOException {
+    void dowloadandUpdate() throws InterruptedException, IOException {
         WebDriverManager.chromedriver().setup();
         WebDriver driver= new ChromeDriver();
         driver.manage().window().maximize();
